@@ -8,7 +8,6 @@ const nextConfig: NextConfig = {
 
   sassOptions: {
     importer: globImporter(),
-    silenceDeprecations: ['legacy-js-api'],
   },
 };
 

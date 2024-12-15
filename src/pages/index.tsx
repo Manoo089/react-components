@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Button from '@/components/ui/Button/Button';
-import Spinner from '@/components/ui/Button/Spinner/Spinner';
-import ScrollShadow from '@/components/ui/Button/ScrollShadow/ScrollShadow';
+import Spinner from '@/components/ui/Spinner/Spinner';
+import ScrollShadow from '@/components/ui/ScrollShadow/ScrollShadow';
 import Input from '@/components/ui/Input/Input';
 import TextArea from '@/components/ui/TextArea/TextArea';
 
@@ -18,8 +18,8 @@ export default function Home() {
         <Input type="text" name="name" radius="medium" />
         <Input type="password" name="password" radius="medium" />
         <TextArea name="message" />
-        <p className="test-class">test</p>
-        <Button label="click" />
+
+        <Button label="click" onClick={() => console.log('Clicked')} />
       </main>
     </>
   );

@@ -1,6 +1,5 @@
 @use 'globals';
-
-@import '../components/ui/**/*.scss';
+@use 'components';
 
 *,
 *::before,
