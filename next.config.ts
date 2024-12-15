@@ -1,8 +1,15 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
+/* eslint-disable */
+const globImporter = require('node-sass-glob-importer');
+/* eslint-disable */
 
 const nextConfig: NextConfig = {
-  /* config options here */
   reactStrictMode: true,
+
+  sassOptions: {
+    importer: globImporter(),
+    silenceDeprecations: ['legacy-js-api'],
+  },
 };
 
 export default nextConfig;

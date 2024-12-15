@@ -1,0 +1,59 @@
+.TextArea {
+  position: relative;
+
+  &__field {
+    height: 210px;
+    margin-top: var(--textfield-margin-top);
+    margin-bottom: var(--textfield-margin-bottom);
+    background-color: var(--textfield-bg-color);
+    color: var(--textfield-font-color);
+    border: var(--textfield-border);
+    padding: var(--textfield-padding);
+    font-family: var(--textfield-font-family);
+    font-size: 1.4rem;
+    line-height: 3rem;
+    font-weight: 600;
+    resize: vertical;
+  }
+
+  &--isError {
+    .TextArea__field {
+      background-color: white;
+      border: none;
+      outline: 2px solid var(--color-danger);
+      border-radius: 5px;
+    }
+  }
+
+  &__errorMessage {
+    position: absolute;
+    bottom: -10px;
+    color: var(--color-danger);
+  }
+
+  &--fullWidth {
+    .TextArea__field {
+      width: 100%;
+    }
+  }
+
+  &--radius {
+    &-large {
+      .TextArea__field {
+        border-radius: 14px;
+      }
+    }
+
+    &-medium {
+      .TextArea__field {
+        border-radius: 12px;
+      }
+    }
+
+    &-small {
+      .TextArea__field {
+        border-radius: 8px;
+      }
+    }
+  }
+}

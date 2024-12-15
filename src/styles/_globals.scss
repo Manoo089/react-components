@@ -1,0 +1,31 @@
+:root {
+  // *** COLORS *** //
+  --color-primary: rgba(0, 111, 238, 1);
+  --color-secondary: rgba(147, 83, 211, 1);
+  --color-success: rgba(23, 201, 100, 1);
+  --color-warning: rgba(245, 165, 36, 1);
+  --color-danger: rgba(243, 18, 96, 1);
+
+  --color-font-primary: rgba(250, 250, 250, 1);
+
+  // *** BUTTON *** //
+
+  // *** INPUT *** //
+
+  --textfield-height: 60px;
+
+  --textfield-bg-color: rgba(255, 255, 255, 1);
+  --textfield-bg-color-disabled: rgba(0, 0, 0, 0.2);
+  --textfield-font-color: rgba(0, 0, 0, 1);
+
+  --textfield-font-family: 'Montserrat', 'sans-serif';
+
+  --textfield-border: 1px solid rgba(248, 128, 0, 0.7);
+  --textfield-border-selected: 1px solid rgba(248, 128, 0, 1);
+  --textfield-border-radius: 3px;
+
+  --textfield-margin-top: 3.6rem;
+  --textfield-margin-bottom: 1rem;
+
+  --textfield-padding: 1.5rem 2rem;
+}

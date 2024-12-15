@@ -1,0 +1,64 @@
+.Input {
+  position: relative;
+
+  &__field {
+    height: var(--textfield-height);
+    margin-top: var(--textfield-margin-top);
+    margin-bottom: var(--textfield-margin-bottom);
+    background-color: var(--textfield-bg-color);
+    color: var(--textfield-font-color);
+    border: var(--textfield-border);
+    padding: var(--textfield-padding);
+    font-family: var(--textfield-font-family);
+    font-size: 1.4rem;
+    line-height: 3rem;
+    font-weight: 600;
+  }
+
+  &--isError {
+    .Input__field {
+      background-color: white;
+      border: none;
+      outline: 2px solid var(--color-danger);
+      border-radius: 5px;
+    }
+  }
+
+  &__errorMessage {
+    position: absolute;
+    bottom: -10px;
+    color: var(--color-danger);
+  }
+
+  &--disabled {
+    .Input__field {
+      background-color: var(--textfield-bg-color-disabled);
+    }
+  }
+
+  &--fullWidth {
+    .Input__field {
+      width: 100%;
+    }
+  }
+
+  &--radius {
+    &-large {
+      .Input__field {
+        border-radius: 14px;
+      }
+    }
+
+    &-medium {
+      .Input__field {
+        border-radius: 12px;
+      }
+    }
+
+    &-small {
+      .Input__field {
+        border-radius: 8px;
+      }
+    }
+  }
+}
